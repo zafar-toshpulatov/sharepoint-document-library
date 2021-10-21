@@ -46,7 +46,8 @@ def parse_args(required_config_keys):
     args = parser.parse_args()
     if args.config:
         setattr(args, 'config_path', args.config)
-        args.config = load_json(args.config)
+        args.config = json.loads(args.config)
+        # args.config = load_json(args.config)
     if args.download_path:
         setattr(args, 'download_path', args.download_path)
         args.download_path = get_abs_path(args.download_path)
