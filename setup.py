@@ -9,7 +9,8 @@ setup(
     classifiers=["Programming Language :: Python :: 3 :: Only"],
     py_modules=["sharepoint_document_library"],
     install_requires=[
-        "requests"
+        "requests",
+        "tqdm"
     ],
     entry_points='''
     [console_scripts]
