@@ -1,0 +1,9 @@
+{
+  "tenant_name": "rfalab.com",
+  "client_id": "*****************",
+  "client_secret": "*****************",
+  "grant_type": "client_credentials",
+  "scope": "https://graph.microsoft.com/.default",
+  "site_name": "ExternalDev",
+  "document_library": "TestdocsName"
+}
