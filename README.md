@@ -22,7 +22,7 @@ This is python script that allows to download files from Sharepoint document lib
    > deactivate
     ```
     
-2. Create `config.json` file for script and put the following.
+2. Create config for script as:
     ```
     {
       "tenant_name": "rfalab.com",
@@ -34,7 +34,7 @@ This is python script that allows to download files from Sharepoint document lib
       "document_library": "TestdocsName"
     }
     ```
-    Full list of options in `config.json`:
+    Full list of options in config:
     
     | Property                            | Type    | Required?  | Description                                                   |
     |-------------------------------------|---------|------------|---------------------------------------------------------------|
@@ -48,9 +48,9 @@ This is python script that allows to download files from Sharepoint document lib
 
 3. Run the script for downloading files from Sharepoint into local directory:
 	```
-    ~/.virtualenvs/sharepoint-document-library/bin/sharepoint-document-library --config config.json --download_path /path/to/directory/
+    ~/.virtualenvs/sharepoint-document-library/bin/sharepoint-document-library --config config_dictionary --download_path /path/to/directory/
     ```
 4. Run the script for uploading files from local directory into Sharepoint:
 	```
-    ~/.virtualenvs/sharepoint-document-library/bin/sharepoint-document-library --config config.json --upload_path /path/to/directory/
+    ~/.virtualenvs/sharepoint-document-library/bin/sharepoint-document-library --config config_dictionary --upload_path /path/to/directory/
     ```
